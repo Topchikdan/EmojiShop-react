@@ -1,0 +1,118 @@
+@use '../../styles/variables' as *;
+
+.shop {
+    &__product {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $color-border;
+        border-radius: $radius-md;
+        padding: 20px;
+        background-color: $color-surface;
+        box-shadow: $shadow-card;
+        cursor: pointer;
+        transition: transform $transition-base, box-shadow $transition-base, border-color $transition-base;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: $shadow-card-hover;
+            border-color: $color-border-strong;
+        }
+    }
+
+    &__emoji-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 220px;
+        border-radius: $radius-sm;
+        background-color: $color-surface-soft;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 72px;
+        font-weight: 100;
+        line-height: 1;
+    }
+
+    &__name {
+        margin: 0 0 6px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    &__description {
+        margin: 0 0 16px;
+        font-size: 14px;
+        color: $color-text-muted;
+        line-height: 1.5;
+        min-height: 42px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__price {
+        margin: 0 0 16px;
+        font-size: 15px;
+        font-weight: 500;
+
+        &-value {
+            color: $color-accent;
+        }
+    }
+
+    &__button-blok {
+        margin-top: auto;
+    }
+
+    &__button {
+        margin: 0;
+        width: 100%;
+        height: 48px;
+        background-color: $color-background;
+        color: #FFF;
+        cursor: pointer;
+        border: 1px solid $color-background;
+        border-radius: $radius-sm;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        transition: $transition-fast;
+
+        &:hover {
+            background-color: $color-surface;
+            color: $color-text;
+        }
+
+        &:active {
+            transform: scale(0.97);
+        }
+
+        &--in-cart {
+            background-color: $color-surface;
+            color: $color-success;
+            border-color: $color-success;
+
+            &:hover {
+                background-color: $color-success;
+                color: #fff;
+            }
+        }
+    }
+
+    @media (max-width: $bp-mobile) {
+        &__title {
+            font-size: 56px;
+        }
+
+        &__emoji-wrap {
+            height: 160px;
+        }
+    }
+}

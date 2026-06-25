@@ -1,0 +1,29 @@
+// ====== Цвета ======
+$color-text: #1f1d25;
+$color-text-muted: #6b6877;
+$color-link: #1f1d25;
+$color-background: #1f1d25;
+$color-border: #e8e6ec;
+$color-border-strong: #c9c6d1;
+$color-surface: #ffffff;
+$color-surface-soft: #f6f5f8;
+$color-accent: #6c5ce7;
+$color-success: #2e9e6b;
+$color-danger: #e0563d;
+
+// ====== Радиусы ======
+$radius-sm: 10px;
+$radius-md: 16px;
+$radius-round: 999px;
+
+// ====== Тени ======
+$shadow-card: 0 2px 10px rgba(31, 29, 37, 0.06);
+$shadow-card-hover: 0 12px 28px rgba(31, 29, 37, 0.12);
+
+// ====== Переходы ======
+$transition-fast: 0.15s ease;
+$transition-base: 0.25s ease;
+
+// ====== Breakpoints ======
+$bp-tablet: 900px;
+$bp-mobile: 560px;
